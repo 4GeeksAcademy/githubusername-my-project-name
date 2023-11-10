@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <title>InstagramFeed</title>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+
+<body>
+  <div class="container">
+    <nav class="navbar bg-body-tertiary">
+      <a class="navbar-brand" href="#">
+        <i class="fa-brands fa-instagram"></i>
+        Instagram
+      </a>
+      <div class="d-flex">
+        <button class="btn btn-success" data-bs-toggle="modal" data-bs-target="#exampleModal">Create New Post</button>
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h1 class="modal-title" id="exampleModalLabel">Create a new post</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="mb-2">
+                <label for="exampleFormControlTextarea1" class="form-label">Caption:</label>
+
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="2">
+              </textarea>
+              </div>
+              <div>
+              <button type="button" class="btn btn-outline-dark btn-sm"><i class="fa-solid fa-camera"></i></button>
+              <button type="button" class="btn btn-outline-dark btn-sm"><i class="fa-solid fa-location-dot"></i></button>
+            </div>
+              <div class="modal-footer">
+
+                
+                <button type="button" class="btn btn-secondary data-bs-dismiss=" modal">Close</button>
+                <button type="button" class="btn btn-success">Publish</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="dropdown">
+          <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown">
+            <i class="fa-solid fa-gear"></i>
+          </button>
+          <ul class="dropdown-menu dropdown-menu-ligth dropdown-menu-end">
+            <li><a class="dropdown-item active" href="#">Action</a></li>
+            <li><a class="dropdown-item" href="#">Profile</a></li>
+            <li><a class="dropdown-item" href="#">Accesibility</a></li>
+            <li><a class="dropdown-item" href="#">Privacy and Data</a></li>
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+            <li><a class="dropdown-item" href="#">
+                <p class="text-danger">Log Out</p>
+              </a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <ul class="nav nav-tabs justify-content-center" id="myTab" role="tablist">
+      <li class="nav-item" role="presentation">
+        <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home-tab-pane" type="button"
+          role="tab" aria-controls="home-tab-pane" aria-selected="true"><i class="fa-solid fa-table-cells"></i></button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile-tab-pane" type="button"
+          role="tab" aria-controls="profile-tab-pane" aria-selected="false"><i class="fa-solid fa-square"></i></button>
+      </li>
+    </ul>
+    <div class="tab-content" id="myTabContent">
+      <div class="tab-pane fade show active" id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab" tabindex="0">
+        <div class="row">
+          <div class="col-sm-12 col-md-6 col-lg-4 col-xl-4 py-2 ">
+            <div class="ratio ratio-1x1">
+            <img class="img-fluid" src="https://viajes.nationalgeographic.com.es/medio/2017/04/24/roma_2d72ff93.jpg" ">  
+            </div>
+          </div>
+              <div class="col-sm-12 col-md-6 col-lg-4 col-xl-4 py-2">
+                <div class="ratio ratio-1x1">
+            <img class="img-fluid" src="https://viajes.nationalgeographic.com.es/medio/2017/04/24/londres_b72fb870.jpg">
+          </div>
+        </div>
+          <div class="col-sm-12 col-md-6 col-lg-4 col-xl-4 py-2">
+            <div class="ratio ratio-1x1">
+            <img class="img-fluid" src="https://viajes.nationalgeographic.com.es/medio/2017/04/24/paris_fa5c2ffd.jpg">
+          </div>
+        </div>
+          <div class="col-sm-12 col-md-6 col-lg-4 col-xl-4 col py-2">
+            <div class="ratio ratio-1x1">
+            <img class="img-fluid" src="https://viajes.nationalgeographic.com.es/medio/2017/04/24/phuket_b973ead8.jpg">
+          </div>
+        </div>
+          <div class="col-sm-12 col-md-6 col-lg-4 col-xl-4 py-2">
+            <div class="ratio ratio-1x1">
+            <img class="img-fluid"
+              src="https://viajes.nationalgeographic.com.es/medio/2017/04/24/gran-caiman-islas-caiman_c15a31ba.jpg">
+          </div>
+        </div>
+          <div class="col-sm-12 col-md-6 col-lg-4 col-xl-4 py-2">
+            <div class="ratio ratio-1x1">
+            <img class="img-fluid"
+              src="https://viajes.nationalgeographic.com.es/medio/2017/04/24/dubai-emiratos-arabes-unidos_e7e63fff.jpg">
+          </div>
+        </div>
+          <div class="col-sm-12 col-md-6 col-lg-4 col-xl-4 py-2">
+            <div class="ratio ratio-1x1">
+            <img class="img-fluid"
+              src="https://viajes.nationalgeographic.com.es/medio/2017/04/24/rio-de-janeiro-brasil_7686ae32.jpg">
+          </div>
+        </div>
+          <div class="col-sm-12 col-md-6 col-lg-4 col-xl-4 py-2">
+            <div class="ratio ratio-1x1">
+            <img class="img-fluid"
+              src="https://viajes.nationalgeographic.com.es/medio/2017/04/24/nueva-york_66d209da.jpg">
+          </div>
+        </div>
+          <div class="col-sm-12 col-md-6 col-lg-4 col-xl-4 py-2">
+            <div class="ratio ratio-1x1">
+            <img class="img-fluid" src="https://viajes.nationalgeographic.com.es/medio/2017/04/24/jamaica_bd82f235.jpg">
+          </div>
+        </div>
+        </div>
+      </div>
+      <div class="tab-pane fade" id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">
+        <div class="row">
+          <div class="col">
+            <div class="mx-auto p-4" style="width: 600px;">
+              <div class="card">
+                <div class="d-flex justify-content-between">
+                <h5 class="card-title">Roma, Italia</h5> <h6>05/04</h6>
+              </div>
+                <img src="https://viajes.nationalgeographic.com.es/medio/2017/04/24/roma_2d72ff93.jpg"
+                  class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h6 class="card-subtitle text-doby fs-6 fw-bold">1550 Likes</h6>
+                  <p class="card-text"> La ciudad eterna es una lección de Historia para cualquier viajero.</p>
+                </div>
+              </div><br>
+              <div class="card">
+                <div class="d-flex justify-content-between">
+                <h5 class="card-title">Londres, Gran Bretaña</h5><h6>30/03</h6>
+              </div>
+                <img src="https://viajes.nationalgeographic.com.es/medio/2017/04/24/londres_b72fb870.jpg"
+                  class="card-img-top" alt=".     ..">
+                <div class="card-body">
+                  <h6 class="card-subtitle text-doby fs-6 fw-bold">1550 Likes</h6>
+                  <p class="card-text"> Aunque circulen por la izquierda y midan las distancias en millas y yardas,
+                    Londres es
+                    la más popular de las ciudades del mundo. Historia y carácter, monumentos que son verdaderos iconos
+                    como
+                    el Big Ben o los mismísimos taxis tradicionales son ingredientes para una escapada perfecta.</p>
+                </div>
+              </div><br>
+              <div class="card">
+                <div class="d-flex justify-content-between">
+                <h5 class="card-title">Paris, Francia</h5><h6>14/02</h6>
+              </div>
+                <img src="https://viajes.nationalgeographic.com.es/medio/2017/04/24/paris_fa5c2ffd.jpg"
+                  class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h6 class="card-subtitle text-doby fs-6 fw-bold">1550 Likes</h6>
+                  <p class="card-text"> La ciudad de la luz, del amor, la ciudad de la literatura, está llena de
+                    atracciones
+                    suficientes para una vida.</p>
+                </div>
+              </div><br>
+              <div class="card">
+                <div class="d-flex justify-content-between">
+                <h5 class="card-title">Phuket, Tailandia</h5><h6>05/01</h6>
+              </div>
+                <img src="https://viajes.nationalgeographic.com.es/medio/2017/04/24/phuket_b973ead8.jpg"
+                  class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h6 class="card-subtitle text-doby fs-6 fw-bold">1550 Likes</h6>
+                  <p class="card-text"> Tailandia es el mejor destino para comenzar a conocer Asia. Entonces, Phuket es
+                    el
+                    principio. La isla más grande de Tailandia tiene playas de ensueño como las de Patong y Karon Beach.
+                  </p>
+                </div>
+                
+              </div><br>
+              
+              <div class="card">
+                <div class="d-flex justify-content-between">
+                <h5 class="card-title">Jamaica</h5><h6>31/12</h6>
+              </div>
+                
+                <img src="https://viajes.nationalgeographic.com.es/medio/2017/04/24/jamaica_bd82f235.jpg"
+                  class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h6 class="card-subtitle text-doby fs-6 fw-bold">1550 Likes</h6>
+                  <p class="card-text">En el Caribe más turquesa encontramos Jamaica, crisol de culturas procedentes del
+                    África, Asia y Europa. Si pensáramos los destinos en clave musical, con esta isla no hay confusión:
+                    suena a reggae y Bob Marley fue su icono. </p>
+                </div>
+              </div><br>
+              <div class="card">
+                <div class="d-flex justify-content-between">
+                <h5 class="card-title">Dubai, Emiratos Arabes Unidos</h5><h6>25/12</h6>
+              </div>
+                <img
+                  src="https://viajes.nationalgeographic.com.es/medio/2017/04/24/dubai-emiratos-arabes-unidos_e7e63fff.jpg"
+                  class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h6 class="card-subtitle text-doby fs-6 fw-bold">1550 Likes</h6>
+                  <p class="card-text"> Dubai es una ciudad moderna robada al desierto. Parece inconcebible que una urbe
+                    así se haya levantado tan rápidamente como se ha hecho: enormes rascacielos, algunos son icono de la
+                    arquitectura más contemporánea, exhibición de lujo, de excentricidades, de poder.
+                  </p>
+                </div>
+              </div><br>
+              <div class="card">
+                <div class="d-flex justify-content-between">
+                <h5 class="card-title">Rio de Janeiro, Brasil</h5><h6>17/12</h6>
+              </div>
+                <img src="https://viajes.nationalgeographic.com.es/medio/2017/04/24/rio-de-janeiro-brasil_7686ae32.jpg"
+                  class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h6 class="card-subtitle text-doby fs-6 fw-bold">1550 Likes</h6>
+                  <p class="card-text"> Cuando se sube a lo más alto de la ciudad en la montaña de Corcovado, como por
+                    ejemplo hasta el mirador de la Estatua de Cristo el Redentor, se puede observar la fabulosa
+                    ubicación y la belleza de Río de Janeiro.</p>
+                </div>
+              </div><br>
+              <div class="card">
+                <div class="d-flex justify-content-between">
+                <h5 class="card-title">Nueva York, Estados Unidos</h5><h6>04/09</h6>
+              </div>
+                <img src="https://viajes.nationalgeographic.com.es/medio/2017/04/24/nueva-york_66d209da.jpg"
+                  class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h6 class="card-subtitle text-doby fs-6 fw-bold">1550 Likes</h6>
+                  <p class="card-text"> Esta ciudad es inabarcable y tiene tantas caras que harían falta diferentes
+                    vidas para decir que se conoce bien. Pasear por Central Park en otoño o primavera.</p>
+                </div>
+              </div><br>
+              <div class="card">
+                <div class="d-flex justify-content-between">
+                <h5 class="card-title">Gran Caiman, Islas Caiman</h5><h6>06/05</h6>
+              </div>
+                <img
+                  src="https://viajes.nationalgeographic.com.es/medio/2017/04/24/gran-caiman-islas-caiman_c15a31ba.jpg"
+                  class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h6 class="card-subtitle text-doby fs-6 fw-bold">1550 Likes</h6>
+                  <p class="card-text"> El pirata Francis Drake fue el primer inglés en llegar a las Islas Caimán,
+                    un archipiélago que es una joya en pleno Mar Caribe y que se encuentra junto a Cuba y Jamaica.
+                    Desde entonces, sus islas suenan a aventura.</p>
+                </div>
+              </div><br>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
